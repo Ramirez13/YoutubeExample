@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5Ws-Lw-N3i">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Error Handler-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RootViewController" customModule="Youtube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ou4-p8-M80">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AZ7-zL-rYf">
+                                    <size key="itemSize" width="286" height="153"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="wFS-0h-5jg" customClass="VideoCell" customModule="Youtube" customModuleProvider="target">
+                                        <rect key="frame" x="44.5" y="0.0" width="286" height="153"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="286" height="153"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SCy-lh-wKF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="286" height="122.5"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3PW-9C-Qdk">
+                                                    <rect key="frame" x="20" y="122.5" width="246" height="30.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roK-ji-8hG">
+                                                    <rect key="frame" x="258" y="114.5" width="0.0" height="0.0"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.17706549657534246" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="SCy-lh-wKF" firstAttribute="height" secondItem="wFS-0h-5jg" secondAttribute="height" multiplier="0.8" id="3ow-64-taC"/>
+                                            <constraint firstItem="SCy-lh-wKF" firstAttribute="top" secondItem="wFS-0h-5jg" secondAttribute="top" id="9HL-Es-ol6"/>
+                                            <constraint firstAttribute="trailing" secondItem="SCy-lh-wKF" secondAttribute="trailing" id="EaK-Q0-gyk"/>
+                                            <constraint firstAttribute="bottom" secondItem="3PW-9C-Qdk" secondAttribute="bottom" id="JCq-tj-U1a"/>
+                                            <constraint firstItem="SCy-lh-wKF" firstAttribute="leading" secondItem="wFS-0h-5jg" secondAttribute="leading" id="KCP-3i-t36"/>
+                                            <constraint firstItem="3PW-9C-Qdk" firstAttribute="leading" secondItem="wFS-0h-5jg" secondAttribute="leading" constant="20" id="SYU-gk-0CD"/>
+                                            <constraint firstItem="roK-ji-8hG" firstAttribute="bottom" secondItem="SCy-lh-wKF" secondAttribute="bottom" constant="-8" id="UNc-SB-UZG"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="roK-ji-8hG" secondAttribute="trailing" constant="20" id="Voz-LZ-nxM"/>
+                                            <constraint firstAttribute="trailing" secondItem="3PW-9C-Qdk" secondAttribute="trailing" constant="20" id="Wkg-WD-kfa"/>
+                                            <constraint firstItem="3PW-9C-Qdk" firstAttribute="top" secondItem="SCy-lh-wKF" secondAttribute="bottom" id="g8q-GN-yre"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="duration" destination="roK-ji-8hG" id="RZ1-EL-v3b"/>
+                                            <outlet property="thumbnailImageView" destination="SCy-lh-wKF" id="7IH-Ri-Pf2"/>
+                                            <outlet property="videoNameLabel" destination="3PW-9C-Qdk" id="9KG-2J-jBW"/>
+                                            <segue destination="3ec-C8-Mmm" kind="show" identifier="PlayerSegue" id="oLe-LW-RdV"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ndc-Fg-NdF" id="ec7-Pj-T0T"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ybq-Cf-jGY"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ou4-p8-M80" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Hee-yS-H8e"/>
+                            <constraint firstItem="ou4-p8-M80" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mQf-SI-NGb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ou4-p8-M80" secondAttribute="trailing" id="va7-UC-yVd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ou4-p8-M80" secondAttribute="bottom" id="vbv-tS-1nG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Youtube" id="bZO-z6-4y3"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ou4-p8-M80" id="WVT-6W-COF"/>
+                        <outlet property="dataSource" destination="Ndc-Fg-NdF" id="NpF-EH-X0Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="Ndc-Fg-NdF" customClass="VideosDataSource" customModule="Youtube" customModuleProvider="target">
+                    <connections>
+                        <outlet property="collectionView" destination="ou4-p8-M80" id="o8n-lt-6fw"/>
+                        <outlet property="errorHandler" destination="BYZ-38-t0r" id="Sa7-yk-Cu1"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="26.53673163418291"/>
+        </scene>
+        <!--PlayerScene-->
+        <scene sceneID="RoY-EZ-GO7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerScene" id="3ec-C8-Mmm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fj8-Ed-Ee7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="26"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CiF-yU-xgg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCp-3U-Zpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="5Ws-Lw-N3i" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OEX-UU-uMA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="JrS-wp-sKA"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-706" y="27"/>
+        </scene>
+    </scenes>
+</document>
